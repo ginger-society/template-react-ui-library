@@ -4,10 +4,11 @@ import styles from './iconsView.module.scss'
 
 const IconsView = () => {
 	const AllIcons = useMemo(() => {
-		return Object.values(Icons).map((Icon: any) => {
+		console.log(Icons)
+		return Object.keys(Icons).map((key: any) => {
 			return {
-				Component: Icon,
-				name: Icon.displayName.replace('Svg', '')
+				Component: Icons[key],
+				name: key
 			}
 		})
 	}, [])
