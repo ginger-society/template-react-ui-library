@@ -4,8 +4,7 @@ module.exports = {
 		'eslint:recommended',
 		'plugin:react/recommended',
 		'plugin:jsx-a11y/recommended',
-		'plugin:prettier/recommended',
-		'plugin:storybook/recommended'
+		'plugin:prettier/recommended'
 	],
 	plugins: ['react-hooks', 'testing-library'],
 	env: {
